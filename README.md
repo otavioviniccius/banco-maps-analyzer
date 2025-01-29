@@ -24,3 +24,6 @@ Este projeto coleta e analisa as avaliações de agências bancárias usando a A
 1. Clone este repositório:
    ```bash
    git clone https://github.com/otavioviniccius/banco-maps-analyzer.git
+2. Rodar no terminal:
+   ```bash
+   python src/filter_bank_reviews.py
