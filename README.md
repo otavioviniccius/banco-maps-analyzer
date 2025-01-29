@@ -1,17 +1,26 @@
-# Banco Maps Analyzer
+# Análise de Avaliações de Agências Bancárias
 
-Este projeto utiliza a API do Google Maps para buscar agências bancárias e analisar suas avaliações. 
+Este projeto coleta e analisa as avaliações de agências bancárias usando a API do Google Maps. A análise inclui a identificação de palavras-chave, classificação das melhores e piores agências, além de um dashboard no Power BI e Excel para visualização. Também foi implementada uma análise de sentimentos para determinar se as avaliações são positivas, neutras ou negativas.
 
 ## Funcionalidades
-- Buscar agências bancárias próximas a um local.
-- Coletar informações e avaliações.
-- Identificar os principais problemas relatados pelos clientes.
 
-## Como Rodar
-1. Clone este repositório.
-2. Instale as dependências: `pip install -r requirements.txt`.
-3. Adicione sua chave da API no arquivo `src/api_config.py`.
-4. Execute o script principal: `python src/main.py`.
+- Coleta de dados de agências bancárias através da API do Google Maps.
+- Análise das avaliações, identificando palavras-chave.
+- Geração de rankings das melhores e piores agências.
+- Implementação de filtro para visualizar avaliações de um banco específico.
+- Análise de sentimentos (positiva, neutra ou negativa) nas avaliações.
 
-## Contribuindo
-Sinta-se à vontade para abrir issues ou enviar PRs.
+## Tecnologias Usadas
+
+- Python
+  - Bibliotecas: `requests`, `pandas`, `json`, `nltk`, `textblob`, etc.
+- Power BI
+- Excel
+- API do Google Maps
+- API de Análise de Sentimentos (opcional)
+
+## Como Rodar o Projeto
+
+1. Clone este repositório:
+   ```bash
+   git clone https://github.com/otavioviniccius/banco-maps-analyzer.git
