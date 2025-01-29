@@ -1,0 +1,3 @@
+# Ignorar chaves e dados locais
+*.key
+data/
