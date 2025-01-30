@@ -6,8 +6,14 @@ import sys  # Adicionando a importação do sys
 # Adicionar o caminho do diretório raiz ao sys.path
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
-# Sua chave de API do Google Maps
-gmaps = googlemaps.Client(key='AIzaSyDUpEaANRt3H8GD_pz_wUQn43LmfBPFoXY')
+try:
+    from src.api_config import API_KEY
+except ImportError:
+    print("Erro: O arquivo api_config.py não foi encontrado ou a variável API_KEY não está definida.")
+    sys.exit(1)
+
+# Configurando o cliente Google Maps
+gmaps = googlemaps.Client(key=API_KEY)
 
 location = '-23.550520, -46.633308'  # Coordenadas de São Paulo, SP
 place_type = 'bank'  # Tipo de lugar, por exemplo, 'bank' para agências bancárias
